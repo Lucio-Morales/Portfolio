@@ -1,61 +1,25 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
-/* Estilos para que cada sección ocupe toda la pantalla */
 #hero, #about, #projects, #skills {
-  height: 100vh; /* 100% de la altura de la pantalla */
+  height: 100vh; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Estilo básico para el cuerpo */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family:"Cormorant Garamond", serif;
+  font-weight:400;
+  font-style: normal;
+}
+h2 {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3.2rem;
 }
 
-/* Opcional: colores de fondo diferentes para cada sección para visualización */
 #hero {
+ 
   background-color: #f0f0f0;
 }
 
@@ -71,7 +35,6 @@ body {
   background-color: #c0c0c0;
 }
 
-/* Estilos para el nav */
 nav {
   background: #333;
   padding: 1rem;

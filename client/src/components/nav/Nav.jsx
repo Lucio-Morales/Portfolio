@@ -11,10 +11,10 @@ const Nav = () => {
     return (
         <nav>
             <ul>
-                <li><a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>Home</a></li>
-                <li><a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>About</a></li>
-                <li><a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>Projects</a></li>
-                <li><a href="#skills" onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}>Skills</a></li>
+                <li><a href="#hero" onClick={(event) => { event.preventDefault(), scrollToSection('hero'); }}>Home</a></li>
+                <li><a href="#about" onClick={(event) => { event.preventDefault(), scrollToSection('about'); }}>About</a></li>
+                <li><a href="#projects" onClick={(event) => { event.preventDefault(), scrollToSection('projects'); }}>Projects</a></li>
+                <li><a href="#skills" onClick={(event) => { event.preventDefault(), scrollToSection('skills'); }}>Skills</a></li>
             </ul>
         </nav>
     )
