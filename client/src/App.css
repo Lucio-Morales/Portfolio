@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,63 @@
 
 .read-the-docs {
   color: #888;
+} */
+/* Estilos para que cada sección ocupe toda la pantalla */
+#hero, #about, #projects, #skills {
+  height: 100vh; /* 100% de la altura de la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo básico para el cuerpo */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Opcional: colores de fondo diferentes para cada sección para visualización */
+#hero {
+  background-color: #f0f0f0;
+}
+
+#about {
+  background-color: #e0e0e0;
+}
+
+#projects {
+  background-color: #d0d0d0;
+}
+
+#skills {
+  background-color: #c0c0c0;
+}
+
+/* Estilos para el nav */
+nav {
+  background: #333;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
