@@ -2,9 +2,9 @@
 
 const Hero = () => {
     return (
-        <div>
+        <section id="hero" >
             <h2>Welcome, I am hero component!</h2>
-        </div>
+        </section>
     )
 }
 
