@@ -1,7 +1,7 @@
 
 const About = () => {
     return (
-        <section id="about">
+        <section id="about" className="section">
             <h2>About component</h2>
         </section>
     )
