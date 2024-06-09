@@ -3,7 +3,7 @@ import Home from "./components/home/Home"
 import About from "./components/about/About"
 import Projects from "./components/projects/Projects"
 import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
+// import Footer from "./components/footer/Footer";
 import { useEffect, useState } from "react"
 import { Routes, Route } from "react-router-dom";
 
@@ -33,7 +33,6 @@ function App() {
 
           <Nav />
 
-
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -41,8 +40,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
 
-
-          <Footer />
+          {/* <Footer /> */}
         </>
       )}
     </div>

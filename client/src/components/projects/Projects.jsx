@@ -1,9 +1,10 @@
+import ProjectsContainer from "../projectsContainer/ProjectsContainer";
 
 
 const Projects = () => {
     return (
         <section id="projects" className="section">
-            <h2>Projects section</h2>
+            <ProjectsContainer />
         </section>
     )
 };

@@ -2,7 +2,8 @@
 const Home = () => {
     return (
         <section id="home" className="section">
-            <h2>Welcome to Home component!</h2>
+            <h1>Welcome to my portfolio, my friend.</h1>
+            <p>My name is <span>Lucio Morales</span>, I am a 25 years Argentine developer. </p>
         </section>
     )
 }
