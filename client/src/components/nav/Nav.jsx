@@ -1,30 +1,40 @@
-import { Link } from "react-router-dom"
+
+import { Link } from 'react-router-dom';
+import { FaHome, FaUser, FaProjectDiagram, FaEnvelope } from 'react-icons/fa'; // Ejemplo con React Icons
+import styles from './Nav.module.css';
 
 const Nav = () => {
-
     return (
-        <nav>
+
+        < nav className={styles.nav} >
             <ul>
-
-                <Link to="/">
-                    <li>Home</li>
+                <Link to="/" data-text="Home">
+                    <li>
+                        <FaHome />
+                    </li>
                 </Link>
 
-                <Link to="/about">
-                    <li>About me</li>
+                <Link to="/about" data-text="About">
+                    <li>
+                        <FaUser />
+                    </li>
                 </Link>
 
-                <Link to="/projects">
-                    <li>Projects</li>
+                <Link to="/projects" data-text="Projects">
+                    <li>
+                        <FaProjectDiagram />
+                    </li>
                 </Link>
 
-                <Link to="/contact">
-                    <li>Contact</li>
+                <Link to="/contact" data-text="Contact">
+                    <li>
+                        <FaEnvelope />
+                    </li>
                 </Link>
-
             </ul>
-        </nav>
-    )
+        </nav >
+
+    );
 }
 
-export default Nav
+export default Nav;
