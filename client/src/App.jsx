@@ -1,50 +1,26 @@
-import Nav from "./components/nav/Nav"
-import Home from "./components/home/Home"
-import About from "./components/about/About"
-import Projects from "./components/projects/Projects"
-import Contact from "./components/contact/Contact";
-// import Footer from "./components/footer/Footer";
-import { useEffect, useState } from "react"
-import { Routes, Route } from "react-router-dom";
-
+import Nav from './components/nav/Nav';
+import Home from './components/home/Home';
+import About from './components/about/About';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
+	return (
+		<div>
+			<Nav />
 
-  const [loading, setLoading] = useState(true)
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/about' element={<About />} />
+				<Route path='/projects' element={<Projects />} />
+				<Route path='/contact' element={<Contact />} />
+			</Routes>
 
-
-
-  useEffect(() => {
-    setLoading(true)
-
-    setTimeout(() => {
-      setLoading(false)
-    }, 1900)
-  }, [])
-
-  return (
-    <div >
-      {loading ? (
-        <div>
-          <p>Loading..</p>
-        </div>
-      ) : (
-        <>
-
-          <Nav />
-
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-
-          {/* <Footer /> */}
-        </>
-      )}
-    </div>
-  )
+			<Footer />
+		</div>
+	);
 }
 
-export default App
+export default App;

@@ -1,5 +1,3 @@
-import styles from './CardProject.module.css';
-
 const CardProject = props => {
 	const { name, image, description } = props;
 	return (
