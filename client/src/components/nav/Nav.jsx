@@ -1,40 +1,35 @@
-
 import { Link } from 'react-router-dom';
-import { FaHome, FaUser, FaProjectDiagram, FaEnvelope } from 'react-icons/fa'; // Ejemplo con React Icons
+import { FaHome } from 'react-icons/fa';
+import { RiContactsFill } from 'react-icons/ri';
+import { GrProjects } from 'react-icons/gr';
+import { MdContactPhone } from 'react-icons/md';
+
 import styles from './Nav.module.css';
 
 const Nav = () => {
-    return (
+	return (
+		<>
+			<nav className={styles.nav}>
+				<ul className={styles.list}>
+					<Link to='/' className={styles.listLink}>
+						<FaHome className={styles.icon} />
+					</Link>
 
-        < nav className={styles.nav} >
-            <ul>
-                <Link to="/" data-text="Home">
-                    <li>
-                        <FaHome />
-                    </li>
-                </Link>
+					<Link to='/about' className={styles.listLink}>
+						<RiContactsFill className={styles.icon} />
+					</Link>
 
-                <Link to="/about" data-text="About">
-                    <li>
-                        <FaUser />
-                    </li>
-                </Link>
+					<Link to='/projects' className={styles.listLink}>
+						<GrProjects className={styles.icon} />
+					</Link>
 
-                <Link to="/projects" data-text="Projects">
-                    <li>
-                        <FaProjectDiagram />
-                    </li>
-                </Link>
-
-                <Link to="/contact" data-text="Contact">
-                    <li>
-                        <FaEnvelope />
-                    </li>
-                </Link>
-            </ul>
-        </nav >
-
-    );
-}
+					<Link to='/contact' className={styles.listLink}>
+						<MdContactPhone className={styles.icon} />
+					</Link>
+				</ul>
+			</nav>
+		</>
+	);
+};
 
 export default Nav;

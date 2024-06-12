@@ -1,0 +1,39 @@
+.nav {
+    background-color: #292929;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 12px;
+    border-radius: 12px;
+    max-width: 265px; /* Ajusta el ancho máximo de la barra de navegación según tu preferencia */
+    margin-left: auto; /* Centra la barra de navegación horizontalmente */
+    margin-right: auto; /* Centra la barra de navegación horizontalmente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6)
+}
+
+.list {
+    background-color:   #292929;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.listLink {
+    background-color:  #292929;
+    display: inline-block;
+    margin: 4px;
+    padding: 5px;
+}
+  
+  .icon {
+    background-color: #686868;
+    border-radius: 12px;
+    padding: 8px;
+    font-size: 28px; 
+    vertical-align: middle;
+}
+
+.icon:hover {
+    background-color: #616161;
+}
