@@ -1,4 +1,4 @@
-import styles from '../../styles/Section.module.css';
+// import styles from './Project.module.css';
 import CardProject from '../cardProject/CardProject';
 
 const projects = [
@@ -9,7 +9,7 @@ const projects = [
 
 const Projects = () => {
 	return (
-		<section id='projects' className={styles.section}>
+		<section id='projects'>
 			<div>
 				{projects.map(project => (
 					<CardProject

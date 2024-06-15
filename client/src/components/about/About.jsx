@@ -1,8 +1,6 @@
-import styles from '../../styles/Section.module.css';
-
 const About = () => {
 	return (
-		<section id='about' className={styles.section}>
+		<section id='about'>
 			<h3>About me</h3>
 			<p>
 				I fundamentally define myself as an optimistic dreamer. <br />

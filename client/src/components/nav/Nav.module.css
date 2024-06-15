@@ -1,17 +1,25 @@
+/* Navbar container */
+/* Navbar container */
 .nav {
-    background-color: #292929;
+    background-color: #272727; 
     text-align: center;
-    padding: 10px 0;
-    margin-top: 12px;
-    border-radius: 12px;
-    max-width: 265px; /* Ajusta el ancho máximo de la barra de navegación según tu preferencia */
-    margin-left: auto; /* Centra la barra de navegación horizontalmente */
-    margin-right: auto; /* Centra la barra de navegación horizontalmente */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6)
+    padding: 2px ;
+    margin: 0;
+    border-radius: 14px; 
+    max-width: 265px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); 
+    position: fixed; 
+    bottom: 12px; 
+    left: 0;
+    right: 0;
+    z-index: 1000; 
 }
 
+/* Lista de enlaces */
 .list {
-    background-color:   #292929;
+    background-color: transparent; 
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -19,21 +27,24 @@
     justify-content: center;
 }
 
+/* Estilos para los enlaces */
 .listLink {
-    background-color:  #292929;
+    background-color: transparent; 
     display: inline-block;
     margin: 4px;
-    padding: 5px;
+    padding: 6px;
 }
-  
-  .icon {
-    background-color: #686868;
+
+/* Iconos */
+.icon {
+    background-color: #1a1a1a; /* Color de fondo oscuro */
     border-radius: 12px;
     padding: 8px;
-    font-size: 28px; 
+    font-size: 26px;
     vertical-align: middle;
 }
 
 .icon:hover {
-    background-color: #616161;
+    background-color: #444; /* Color de fondo más oscuro al hacer hover */
 }
+

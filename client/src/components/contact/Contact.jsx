@@ -1,8 +1,6 @@
-import styles from '../../styles/Section.module.css';
-
 const Contact = () => {
 	return (
-		<section id='contact' className={styles.section}>
+		<section id='contact'>
 			<h2>Contact component</h2>
 		</section>
 	);
