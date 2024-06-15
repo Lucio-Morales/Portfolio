@@ -11,7 +11,7 @@
 
 .homeSection {
     text-align: center;
-    padding: 4px;
+    padding: 4px 0 20px 0;
     min-height: calc(100vh - 56px); 
     display: flex;
     flex-direction: column;
