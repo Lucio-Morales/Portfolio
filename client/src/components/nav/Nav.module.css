@@ -1,5 +1,4 @@
-/* Navbar container */
-/* Navbar container */
+
 .nav {
     background-color: #272727; 
     text-align: center;
@@ -17,7 +16,6 @@
     z-index: 1000; 
 }
 
-/* Lista de enlaces */
 .list {
     background-color: transparent; 
     list-style-type: none;
@@ -27,7 +25,7 @@
     justify-content: center;
 }
 
-/* Estilos para los enlaces */
+
 .listLink {
     background-color: transparent; 
     display: inline-block;
@@ -35,7 +33,6 @@
     padding: 6px;
 }
 
-/* Iconos */
 .icon {
     background-color: #1a1a1a; /* Color de fondo oscuro */
     border-radius: 12px;
@@ -45,6 +42,9 @@
 }
 
 .icon:hover {
-    background-color: #444; /* Color de fondo más oscuro al hacer hover */
+    background-color: #444; 
 }
 
+.active {
+    background-color: #444; 
+}

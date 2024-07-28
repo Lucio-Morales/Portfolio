@@ -1,14 +1,4 @@
 
-/* .homeSection {
-    text-align: center;
-    padding: 100px 20px 60px; 
-    min-height: calc(100vh - 56px); 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
-
 .homeSection {
     text-align: center;
     padding: 4px 0 20px 0;
@@ -57,6 +47,7 @@
     width: 100%;
     margin: 0 auto;
     padding-bottom: 60px; 
+    
 }
 
 .option:hover {
