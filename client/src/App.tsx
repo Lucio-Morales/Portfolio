@@ -1,4 +1,4 @@
-import Button from './components/Button';
+import { Outlet } from 'react-router-dom';
 import GlobalStyle from './styles/styled-components/GlobalStyle';
 import ThemeProvider from './styles/theme/ThemeProvider';
 
@@ -7,7 +7,7 @@ function App() {
     <>
       <ThemeProvider>
         <GlobalStyle />
-        <Button />
+        <Outlet />
       </ThemeProvider>
     </>
   );
