@@ -2,7 +2,7 @@ import { ProjectsSection } from './styles';
 
 const Projects = () => {
   return (
-    <ProjectsSection>
+    <ProjectsSection id="projects">
       <h1>Projects section</h1>
     </ProjectsSection>
   );
