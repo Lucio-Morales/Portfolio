@@ -1,6 +1,6 @@
 import { useThemeContext } from '../styles/theme';
 
-const Button = () => {
+const ThemeButton = () => {
   const { theme, toggleTheme } = useThemeContext();
   return (
     <button onClick={toggleTheme}>
@@ -9,4 +9,4 @@ const Button = () => {
   );
 };
 
-export default Button;
+export default ThemeButton;

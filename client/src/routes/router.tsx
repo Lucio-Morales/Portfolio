@@ -6,7 +6,7 @@ const router = createBrowserRouter([
   {
     element: <App />,
     path: '/',
-    children: [{ path: '', element: <Dashboard />, children: [] }],
+    children: [{ path: '', element: <Dashboard /> }],
   },
 ]);
 

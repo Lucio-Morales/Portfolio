@@ -1,40 +1,32 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-const Nav = styled.nav`
-    position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  padding: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 50;
-`
-const NavList = styled.ul`
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+export const NavContainer = styled.nav`
+    position: fixed; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.06); 
+    backdrop-filter: blur(30px); 
+    border-radius: 20px; 
+    box-shadow: inset 0 1px 5px rgba(255, 255, 255, 0.1);
+    padding: 10px; 
+    max-width: 600px; 
+    width: calc(100% - 40px); 
+    color: #FAFAFA; 
+    z-index: 1000; 
+
+    a {
+        padding: 10px;
+        margin: 0 5px; 
+        color: #FAFAFA;
+        text-decoration: none; 
+        transition: background 0.3s;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.2); /* Efecto hover */
+        }
+    }
 `;
 
-const NavItem = styled.li``;
-
-const NavButton = styled.button`
-  color: white;
-  background-color: transparent;
-  border: none;
-  padding: 8px 16px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: #555;
-  }
-
-  &:focus {
-    outline: none;
-  }
-`
