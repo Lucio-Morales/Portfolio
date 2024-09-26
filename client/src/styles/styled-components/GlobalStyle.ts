@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
 html {
-    font-size: 100%; /* Esto hace que 1rem = 16px */
+    font-size: 87.5%; 
     overflow-y: scroll;
     overflow-x: hidden;
     overscroll-behavior: none;
@@ -24,8 +24,12 @@ html {
     line-height: 1.6; /* Espaciado adecuado entre líneas para mejor legibilidad */
     min-height: 100vh; /* Garantiza que el cuerpo cubra toda la altura del viewport */
     margin: 0;
-    padding: 0;
+    padding: 0 1rem;
   }
+    @media(min-width: 768px) {
+    html {
+        font-size: 100%
+      }
 
   a {
     text-decoration: none;
@@ -48,6 +52,6 @@ html {
   #root {
     height: 100%;
   }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
