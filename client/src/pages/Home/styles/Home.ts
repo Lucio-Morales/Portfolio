@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const HomeBox = styled.section`
-  color: #333;
+  color: gray;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -13,13 +13,15 @@ const HomeBox = styled.section`
   h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: gray;
+    color: #ffffff; /* Blanco para el título */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
 
   h2 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    color: gray;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
 
   @media (min-width: 768px) {
@@ -32,32 +34,34 @@ const HomeBox = styled.section`
     h2 {
       font-size: 2rem;
     }
-
-    p {
-      font-size: 1.3rem;
-      margin: 1rem 0; 
   }
 `;
 
 const OptionParagraph = styled.p`
-  font-size: 1.2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
   cursor: pointer;
   margin: 0.5rem 0;
   background-color: transparent;
   padding: 0.75rem 1.5rem;
-  border: 1px solid gray;
+  border: 0.2rem solid #333333;
   border-radius: 12px;
   width: 100%;
-  max-width: 400px; /* Aumenta el ancho máximo */
+  max-width: 400px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, background-color 0.2s ease;
-  white-space: nowrap; /* Evita saltos de línea */
+  white-space: nowrap;
   text-align: left;
 
   &:hover {
     transform: scale(1.02);
     background-color: #333333;
-    color: gray;
+    color: #e0e0e0;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 500px;
+    padding: 1rem 2rem;
   }
 `;
 
