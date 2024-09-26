@@ -1,6 +1,11 @@
 import { OptionParagraph } from './styles/Home';
-const Option = ({ text }) => {
-  return <OptionParagraph>{text}</OptionParagraph>;
+const Option = ({ number, text }) => {
+  return (
+    <OptionParagraph>
+      <span>{number}</span>
+      {text}
+    </OptionParagraph>
+  );
 };
 
 export default Option;

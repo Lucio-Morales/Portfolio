@@ -38,7 +38,7 @@ const HomeBox = styled.section`
 `;
 
 const OptionParagraph = styled.p`
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.1rem;
   cursor: pointer;
   margin: 0.5rem 0;
@@ -52,6 +52,13 @@ const OptionParagraph = styled.p`
   transition: transform 0.2s ease, background-color 0.2s ease;
   white-space: nowrap;
   text-align: left;
+
+  span {
+    color: #1f1f1f;
+    padding: 0.2rem;
+    font-weight: bold;
+    margin-right: 0.7rem;
+  }
 
   &:hover {
     transform: scale(1.02);
