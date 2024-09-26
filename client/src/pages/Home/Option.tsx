@@ -1,7 +1,7 @@
 import { OptionParagraph } from './styles/Home';
-const Option = ({ number, text }) => {
+const Option = ({ onClick, number, text }) => {
   return (
-    <OptionParagraph>
+    <OptionParagraph onClick={onClick}>
       <span>{number}</span>
       {text}
     </OptionParagraph>
