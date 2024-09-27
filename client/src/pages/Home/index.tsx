@@ -20,9 +20,9 @@ const Home = () => {
         text={'I want to know more about you 😊'}
       />
       <Option
-        onClick={() => navigate('/about')}
+        onClick={() => navigate('/contact')}
         number={'3.'}
-        text={'I’m just visiting 👋'}
+        text={'I want to talk to you 👋'}
       />
     </HomeBox>
   );

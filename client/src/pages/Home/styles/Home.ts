@@ -11,7 +11,8 @@ const HomeBox = styled.section`
   text-align: center;
 
   h1 {
-    font-size: 2rem;
+    font-weight: 100;
+    font-size: 3.4rem;
     margin-bottom: 1rem;
     color: #ffffff; /* Blanco para el título */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -19,6 +20,7 @@ const HomeBox = styled.section`
 
   h2 {
     font-size: 1.5rem;
+    font-weight: 100;
     margin-bottom: 1.5rem;
     color: #e0e0e0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -28,11 +30,11 @@ const HomeBox = styled.section`
     padding: 4rem 2rem;
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 4rem;
     }
 
     h2 {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
   }
 `;
