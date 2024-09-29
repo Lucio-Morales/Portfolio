@@ -23,8 +23,8 @@ html {
     font-family: 'Roboto', sans-serif;
     background-color: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    line-height: 1.6; /* Espaciado adecuado entre líneas para mejor legibilidad */
-    min-height: 100vh; /* Garantiza que el cuerpo cubra toda la altura del viewport */
+    line-height: 1.6; 
+    min-height: 100vh; 
     margin: 0;
     padding: 0 1rem;
   }

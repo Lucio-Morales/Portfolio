@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const HomeBox = styled.section`
-  color: gray;
+  // color: gray;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@ const HomeBox = styled.section`
     font-weight: 100;
     font-size: 3.4rem;
     margin-bottom: 1rem;
-    color: #ffffff; /* Blanco para el título */
+    // color: #ffffff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
 
@@ -22,7 +22,7 @@ const HomeBox = styled.section`
     font-size: 1.5rem;
     font-weight: 100;
     margin-bottom: 1.5rem;
-    color: #e0e0e0;
+    // color: #e0e0e0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
 
@@ -47,7 +47,7 @@ const OptionParagraph = styled.p`
   background-color: transparent;
   padding: 0.75rem 1.5rem;
   border: 0.2rem solid #333333;
-  border-radius: 12px;
+  border-radius: 15px;
   width: 100%;
   max-width: 400px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -64,8 +64,7 @@ const OptionParagraph = styled.p`
 
   &:hover {
     transform: scale(1.02);
-    background-color: #333333;
-    color: #e0e0e0;
+    background-color: #030301;
   }
 
   @media (min-width: 768px) {
