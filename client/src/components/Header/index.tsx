@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import ThemeButton from '../ThemeButton/ThemeButton';
 
 const HeaderContainer = styled.header`
   position: fixed;
@@ -12,11 +13,9 @@ const HeaderContainer = styled.header`
   align-items: center;
   height: 60px;
   padding: 0 16px;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 
-  /* Haz que se vea bien en dispositivos más grandes */
   @media (min-width: 768px) {
-    display: none; /* Oculta el header en pantallas más grandes */
+    display: none;
   }
 `;
 
@@ -80,6 +79,7 @@ const Header = () => {
           <path d="M5 12l5 5L20 7" />
         </svg>
       </HeaderButton>
+      {/* <ThemeButton /> */}
     </HeaderContainer>
   );
 };
